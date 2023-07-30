@@ -1,0 +1,20 @@
+{
+	"name": "coin",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"bin": "./bin/coin.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Max Herr",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^1.4.0",
+		"colors": "^1.4.0",
+		"commander": "^11.0.0",
+		"configstore": "^6.0.0",
+		"inquirer": "^8.0.0"
+	}
+}
