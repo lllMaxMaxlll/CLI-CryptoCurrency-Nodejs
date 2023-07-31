@@ -20,7 +20,8 @@ export const check = {
 
 			log(priceData);
 		} catch (error) {
-			console.error(chalk.redBright(error.message));
+			const { error_message } = error.response.data.status;
+			log(chalk.redBright(error_message));
 		}
 	},
 };
