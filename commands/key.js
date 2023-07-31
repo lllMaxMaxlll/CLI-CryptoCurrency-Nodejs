@@ -31,7 +31,7 @@ export const key = {
 			log("Current API Key: " + chalk.cyan(key));
 			return key;
 		} catch (error) {
-			console.error(error.message);
+			log(chalk.redBright(error.message));
 		}
 	},
 	remove() {
@@ -41,7 +41,7 @@ export const key = {
 
 			log(chalk.red("Key removed successfully"));
 		} catch (error) {
-			console.error(error.message);
+			log(chalk.redBright(error.message));
 		}
 	},
 };
