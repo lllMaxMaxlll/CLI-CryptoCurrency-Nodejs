@@ -8,11 +8,6 @@ program.command("set").description("Set API Key -- Get at https://coinmarketcap.
 program.command("show").description("Show API Key").action(key.show);
 
 // Delete api key
-program
-	.command("remove")
-	.description("Remove API Key")
-	.action(() => {
-		console.log("Hello from remove");
-	});
+program.command("remove").description("Remove API Key").action(key.remove);
 
 program.parse(process.argv);
